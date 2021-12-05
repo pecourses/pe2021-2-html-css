@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- стили:
+- внешние (styles.css)
+- внутренние (style в head)
+- inline (атрибут style) -->
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* правило:
+    селектор {
+      свойство1: значение1;
+      свойство2: значение2;
+      ...
+    } */
+    /* типы селекторов
+    - селектор типа (элемента) 001
+    - селектор класса          010
+    - селектор идентификатора  100
+    инлайн стили              1000
+    */
+    /*1*/
+    h1 {
+      color: blue;
+    }
+
+    /* 10 */
+    .red-header {
+      color: red;
+    }
+
+    .green-header {
+      color: green
+    }
+
+    /* 100 */
+    #yellow-header {
+      color: yellow
+    }
+  </style>
+  <link rel="stylesheet" href="./../css/styles.css">
+
+
+  <title>CSS-basic</title>
+</head>
+
+<body>
+  <h1 class="red-header">HEADER1</h1>
+  <h1 class="green-header">HEADER2</h1>
+  <h1 class="red-header">HEADER3</h1>
+  <h1 style="color: orange">HEADER4</h1>
+  <h1 style="color: orange" id="yellow-header" class="green-header">HEADER5</h1>
+  <h1>header6</h1>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi repellendus natus, incidunt voluptatum fugiat
+    obcaecati dolorum dignissimos neque asperiores exercitationem ratione assumenda. Suscipit labore, autem dicta vitae
+    eos fugit.</p>
+
+  <a href="#">Link</a>
+
+  <button>Sign In</button>
+  <button>login</button>
+
+</body>
+
+</html>
